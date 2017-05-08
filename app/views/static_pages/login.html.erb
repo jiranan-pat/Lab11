@@ -1,0 +1,57 @@
+<% provide(:title, 'Login') %>
+<style>
+    #head {
+      border: 1px solid #b1b2b5;
+      margin: 8px 0;
+    }
+</style>
+
+<head>
+  <div id=head>
+    <p>Invalid email/password combination.</p>
+  </div>
+</head>
+<h1>Log in</h1>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input[type=text] {
+    width: 500px;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+    input[type=submit] {
+    background-color: #5c84c4;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 4px;
+    cursor: pointer;
+
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<form>
+  <label for="email">Email</label><br>
+  <input type="text" id="email" name="email" placeholder="Your email..."><br>
+  <label for="password">Password</label><br>
+  <input type="text" id="password" name="password" placeholder="Your password..."> 
+</form>
+<input type="submit" value="Login">
+<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
